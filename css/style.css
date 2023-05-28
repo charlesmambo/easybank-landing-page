@@ -5,6 +5,7 @@ html {
 }
 
 body {
+    background-color: #feffff;
     font-size: 19px;
     margin: 0;
     padding: 0;
@@ -12,15 +13,19 @@ body {
 
 /* HERO SECTION */
 .hero {
-    /* padding: 2% 8%; */
+   position: relative;
+   height: 100vh;
+   overflow: hidden;
 }
 nav {
-    background-image: linear-gradient(to right,hsl(192, 28%, 40%), hsl(136, 37%, 44%) );
+    background-image: linear-gradient(to right,hsl(150, 29%, 47%), hsl(136, 37%, 44%) );
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
     padding: 1% 8%; 
+    position: relative;
+    z-index: 10;
 }
 
 .logo-image img {
@@ -41,13 +46,18 @@ nav {
 .nav-list {
     padding: 10px 18px;
 }
+
+.nav-link:hover{
+    color:  hsl(233, 26%, 24%);
+    border-bottom: 4px solid white;
+    padding-bottom: 38px;
+}
 .nav-link {
-    color: hsl(233, 26%, 24%);
-    font-weight: 600;
+    color: hsl(228, 20%, 90%);
     letter-spacing: 2px;
     text-decoration: none;
 }
-#nav-btn {
+.nav-btn {
     background-image: linear-gradient(to right, hsl(136, 69%, 28%) ,hsl(192, 79%, 34%) );
     border: none;
     border-radius: 2px;
@@ -58,7 +68,59 @@ nav {
     letter-spacing: 2px;
     padding: 15px 30px;
 }
-#nav-btn:hover {
+.nav-btn:hover {
     background-image: linear-gradient(to right, hsl(136, 65%, 51%) ,hsl(192, 70%, 51%) );
 }
 
+
+/* ALL FONTS HERE */
+h1 {
+    font-size: 55px;
+    font-weight: 500;
+}
+p {
+    font-size: 21px;
+}
+
+.text-container p {
+    color: hsl(233, 8%, 62%);
+}
+
+/* <!-- INTRODUCTION  --> */
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8%;
+}
+
+
+.intro-main-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+    width: 100vw;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    right: -250px;
+    z-index: 0;
+}
+
+.intro-main-img img {
+    position: relative;
+    top: -150px;
+    width: 80vh;
+    z-index: 0;
+}
+
+.text-container {
+    width: 45vw;
+}
+
+.intro-btn {
+    margin-top: 30px;
+}
