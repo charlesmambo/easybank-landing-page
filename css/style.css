@@ -14,7 +14,7 @@ body {
 /* HERO SECTION */
 .hero {
    position: relative;
-   height: 100vh;
+   height: 90vh;
    overflow: hidden;
 }
 nav {
@@ -75,15 +75,30 @@ nav {
 
 /* ALL FONTS HERE */
 h1 {
+    color: hsl(233, 26%, 24%);
     font-size: 55px;
     font-weight: 500;
 }
-p {
-    font-size: 21px;
+h2 {
+    color: hsl(233, 26%, 24%);
+    font-size: 40px;
+    font-weight: 500;
 }
 
-.text-container p {
+h3 {
+    color: hsl(233, 26%, 24%);
+    font-size: 30px;
+    font-weight: 500;  
+}
+
+p {
     color: hsl(233, 8%, 62%);
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.box p {
+    font-size: 19px;
 }
 
 /* <!-- INTRODUCTION  --> */
@@ -99,7 +114,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 65vh;
+    height: 600px;
     width: 100vw;
     background-image: url("/images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
@@ -107,14 +122,13 @@ p {
     background-position: center center;
     position: relative;
     right: -250px;
-    z-index: 0;
 }
 
 .intro-main-img img {
     position: relative;
     top: -150px;
     width: 80vh;
-    z-index: 0;
+
 }
 
 .text-container {
@@ -123,4 +137,31 @@ p {
 
 .intro-btn {
     margin-top: 30px;
+}
+
+/* FEATURE SECTION */
+#features {
+    background-image: linear-gradient(to right, hsl(0, 20%, 97%), hsl(0, 0%, 100%) );
+    padding: 4% 8%;
+    position: relative;
+    z-index: 2;
+}
+
+.services {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.box {
+    margin: 80px 0;
+    width: 18vw;
+    box-shadow: 0px 0 1px 0px hsl(223, 19%, 93%);
+    padding: 20px 10px;
+}
+
+.services-img img {
+    width: 60px;
 }
