@@ -93,7 +93,7 @@ h3 {
 
 p {
     color: hsl(233, 8%, 62%);
-    font-size: 21px;
+    font-size: 20px;
     line-height: 25px;
 }
 
@@ -101,6 +101,25 @@ p {
     font-size: 19px;
 }
 
+.article-author {
+    font-size: 17px;
+}
+
+.article-text{
+    font-size: 19px;
+}
+
+.article-link {
+    color: hsl(233, 26%, 24%);
+    font-size: 25px;
+    font-weight: 500;  
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.article-link:hover {
+    color: #2cbdba;
+}
 /* <!-- INTRODUCTION  --> */
 .intro-section {
     display: flex;
@@ -164,4 +183,41 @@ p {
 
 .services-img img {
     width: 60px;
+}
+
+/* ARTICLES SECTION */
+#articles {
+    padding: 4% 8%;
+}
+
+.article-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 30px; */
+}
+
+.article-card {
+    border-radius: 8px;
+    margin: 40px 0;
+    width: 20vw;
+}
+
+/* .last-card {
+    margin-bottom: 18px;
+} */
+
+.article-img img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: -5px;
+    height: 300px;
+    width: 100%;
+}
+
+.article-text-container{
+    background-image: linear-gradient(to right, hsl(0, 20%, 97%), hsl(0, 0%, 100%) );
+    padding: 40px;
+    margin: 0;
+    height: 250px;
 }
