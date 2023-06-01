@@ -57,7 +57,7 @@ nav {
     letter-spacing: 2px;
     text-decoration: none;
 }
-.nav-btn {
+.request-btn {
     background-image: linear-gradient(to right, hsl(136, 69%, 28%) ,hsl(192, 79%, 34%) );
     border: none;
     border-radius: 2px;
@@ -68,7 +68,7 @@ nav {
     letter-spacing: 2px;
     padding: 15px 30px;
 }
-.nav-btn:hover {
+.request-btn:hover {
     background-image: linear-gradient(to right, hsl(136, 65%, 51%) ,hsl(192, 70%, 51%) );
 }
 
@@ -120,6 +120,30 @@ p {
 .article-link:hover {
     color: #2cbdba;
 }
+
+.footer-list a{
+    color: hsl(228, 20%, 90%);
+    text-decoration: none;
+}
+
+.footer-list a:hover{
+    color: hsl(233, 26%, 24%);
+}
+
+.copyrights {
+    color: hsl(228, 20%, 90%);
+    font-size: 17px;
+}
+
+.codedby {
+    font-size: 14px;
+    text-align: right;
+        background: -webkit-linear-gradient(hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+}
+
 /* <!-- INTRODUCTION  --> */
 .intro-section {
     display: flex;
@@ -194,7 +218,6 @@ p {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    /* padding-top: 30px; */
 }
 
 .article-card {
@@ -203,9 +226,6 @@ p {
     width: 20vw;
 }
 
-/* .last-card {
-    margin-bottom: 18px;
-} */
 
 .article-img img {
     border-top-left-radius: 8px;
@@ -221,3 +241,50 @@ p {
     margin: 0;
     height: 250px;
 }
+
+
+/* FOOTER SECTION */
+#footer {
+    background-image: linear-gradient(to right,hsl(150, 29%, 47%), hsl(136, 37%, 44%) );
+    padding: 2% 8%;
+}
+
+.f-logo-img img {
+    width: 200px;
+}
+
+.footer-icon-img {
+    display: flex;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.footer-items {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-items-container {
+    justify-content: space-between;
+    display: flex;
+    gap: 80px;
+}
+
+.logo-n-contacts {
+    display: flex;
+    gap: 200px;
+}
+.footer-list {
+    padding-bottom: 20px;
+}
+
+.footer-btn {
+
+    display: flex;
+    flex-direction: column;
+}
+.footer-button {
+    align-self: self-end;
+    width: 240px;
+}
+
